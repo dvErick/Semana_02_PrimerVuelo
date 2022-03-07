@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+        <meta name="viewoirt" content="width=device-width, initial-scale=1.0">
+        <title>Paste Rico</title>
+        <style></style>
+        <link rel="stylesheet" href="">
+        <style>
+            * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #EDC7C8;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            height: 100px;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 250px;
+            /* only for demonstration, should be removed */
+            background: #9BADB8;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 250px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #9BADB8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        } 
+
+        .menu{
+            background-color: #AEDEED;
+            
+            width: 25%;
+            height: 300px;
+
+        }
+        .adornos{
+            background-color: #AEDEED;
+            width: 33%;
+            height: 450px;
+        }
+        .formulario{
+            background-color: #dae4ed;
+            width: 33%;
+            height: 450px;
+        }
+        .pedido{
+            background-color: #Dae4ed;
+            width: 33%;
+            height: 450px;
+        }
+    
+        </style>
+        <script></script>
+</head>
+<body>
+    
+    <header>
+        
+        <h2>Pasterico</h2>
+    </header>
+
+    <section>
+        <nav >
+               <img src="https://i.postimg.cc/hjXvdxGY/imagen-2022-03-03-153159.png" width="300" height="200" aling="center">
+        </nav>
+
+        <article>
+            <h1>Bienvenidos</h1>
+            <p>Pasterico es una pastelería tradicional que busca ofrecer los mejores productos a un excelente precio <br><br>
+            En pasterico tú eres el primero
+            </p>
+        </article>
+    </section>
+    
+    <section>
+        <h3 align="center" >Sabores</h3>
+        <nav class="menu" align="center"><h4>Fresa</h4><br><img src="https://i.pinimg.com/originals/d8/fa/93/d8fa939ceb0579d55a43988edc589764.jpg" alt="" width="200" height="200"><p>Costo: $360.00 mx</p></nav>
+        <nav class="menu" align="center"><h4>Vainilla</h4><br> <img src="https://www.sweetysalado.com/wp-content/uploads/2016/05/DSC_0168N.jpg" alt="" width="200" height="200"><p>Costo: $320.00 mx</p></nav>
+        <nav class="menu" align="center"><h4>Chocolate</h4><br><img src="https://blogs.elespectador.com/wp-content/uploads/2020/04/90E14D4B-046E-4E3F-B924-CB50E6413F13.png" alt="" width="200" height="200"> <p>Costo: $350.00 mx</p></nav>
+        <nav class="menu" align="center"><h4>Pistacho</h4> <br><img src="https://lasoleta.com/wp-content/uploads/2020/11/Copia-de-2-4.png" alt="" width="200" height="200"><p>Costo: $260.00 mx</p></nav>
+    </section>
+   <br>
+   <br><br>
+    <section>
+        <h3 align="center" >Adornos y pedidos</h3>
+        
+        <nav class="adornos">
+            <h2>Consulta nuestros adornos</h2>
+    <label for="refresco">Adornos disponibles con precio</label><br><br>
+    <input list="adornos">
+    <datalist id="adornos">
+        <option value="Vela de cumpleaños: $15.00">
+        <option value="Muñeco among us: $25.00">
+        <option value="Princesa: $25.00">
+        <option value="Globo: $25.00">
+    </datalist>
+
+        </nav>
+    <nav class="formulario">
+
+        <h2>Datos del cliente</h2>
+
+    <label for="nombre">Nombre</label><br>
+    <input type="text" name="Input1" id="Input1"><br>
+    <label for="dir">Dirección</label><br>
+    <input type="text" id="dir1" name="dir1"><br>
+
+    <label for="tel1">Teléfono</label><br>
+    <input type="number" id="tel1" name="tel1"><br>
+
+    <label for="pago">Método de pago</label><br>
+    <input list="pago">
+    <datalist id="pago">
+        <option value="Efectivo">
+        <option value="Tarjeta">
+        
+    </datalist>
+    <br>
+    <br>
+    <label for="correo1">Correo electrónico</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+
+    <textarea name="textarea" rows="3" cols="50">Descripción del pastel</textarea>
+    <br>
+    <br>
+
+    <button>Realizar pedido</button>
+    </nav>
+    
+    <nav class="pedido">
+        <h3>Elige tu producto</h3>
+
+        <h5>Selecciona el sabor (Puedes elegir los sabores que quieras)</h5>
+    <input type="checkbox" id="sabor1" name="Sabor1" value="Fresa">
+    <label for="s1">Fresa</label><br>
+    <input type="checkbox" id="sabor2" name="sabor22" value="Vainilla">
+    <label for="s2">Vainilla</label><br>
+    <input type="checkbox" id="sabor3" name="sabor3" value="Chocolate">
+    <label for="s3">Chocolate</label><br>
+    <input type="checkbox" id="sabor4" name="sabor4" value="Pistache">
+    <label for="s4">Pistache</label><br>
+
+    <h3>Elige tus adornos (Puedes elegir los que quieras)</h3>
+
+    <h5>Selecciona el sabor (Puedes elegir los sabores que quieras)</h5>
+    <input type="checkbox" id="adorno1" name="adorno1" value="Vela">
+    <label for="a1">Vela de cumpleaños</label><br>
+    <input type="checkbox" id="adorno2" name="adorno2" value="Muñeco">
+    <label for="a2">Muñexo among us</label><br>
+    <input type="checkbox" id="adorno3" name="adorno3" value="Princesa">
+    <label for="a3">Princesa</label><br>
+    <input type="checkbox" id="adorno4" name="adorno4" value="Globo">
+    <label for="a4">Globo</label><br>
+    </nav>
+    
+
+    </nav>
+
+    </section>
+
+   
+</body>
+<footer>
+    <p>Direcciómn: Mariano Jimenez #21 Col. Linares, San Luis Potosí</p>
+    
+    <p>Tel: 4875213985</p>
+   
+    <P>Horario de atención: Contamos con atención las 24 horas del día, de lunes a sábado.</P>
+</footer>
+</html>

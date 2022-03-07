@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+        <meta name="viewoirt" content="width=device-width, initial-scale=1.0">
+        <title>Paste Rico</title>
+        <style></style>
+        <link rel="stylesheet" href="">
+        <style>
+            * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #EDC7C8;
+            padding: 5px;
+            text-align: center;
+            font-size: 13px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 250px;
+            /* only for demonstration, should be removed */
+            background: #9BADB8;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 250px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #9BADB8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        } 
+
+        .menu{
+            background-color: #AEDEED;
+            
+            width: 25%;
+            height: 300px;
+
+        }
+        .adornos{
+            background-color: #AEDEED;
+            width: 33%;
+            height: 250px;
+        }
+        .formulario{
+            background-color: #dae4ed;
+            width: 66%;
+            height: 250px;
+        }
+       
+    
+        </style>
+        <script></script>
+</head>
+<body>
+    
+    <header>
+        
+        <h2>Pasterico</h2>
+    </header>
+
+    <section>
+        <nav >
+               <img src="https://i.postimg.cc/hjXvdxGY/imagen-2022-03-03-153159.png" width="300" height="200" aling="center">
+        </nav>
+
+        <article>
+            <h1>Bienvenidos</h1>
+            <p>Aquí podrá revisar el inventario de los adornos, así con los pedidos realizados a la pastelería junto con información importante
+            </p>
+        </article>
+    </section>
+    
+   
+    <section>
+        <h3 align="center" >Adornos y pedidos</h3>
+        
+        <nav class="adornos">
+            <h2>Inventario de adornos</h2>
+            <table border="1">
+                <colgroup span="3" class="columns"></colgroup>
+                <tr>
+                  <th>Adorno</th>
+                  <th>Cantidad</th>
+                  <th>Costo</th>
+                
+                </tr>
+                <tr>
+                  <td>Minion</td>
+                  <td>25</td>
+                  <td>$ 25.00</td>
+                  
+                </tr>
+                <tr>
+                  <td>Globo</td>
+                  <td>15</td>
+                  <td>$ 25.00</td>
+                  
+                </tr>
+              </table>
+
+        </nav>
+    <nav class="formulario">
+
+        <h2>Pedidos</h2>
+
+        <table border="1">
+            <colgroup span="5" class="columns"></colgroup>
+            <tr>
+              <th>N°</th>
+              <th>Nobre Cliente</th>
+              <th>Teléfono</th>
+              <th>Email</th>
+              <th>Descripcion</th>
+            
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Athus Deria Lara</td>
+              <td>7851245879</td>
+              <td>Deria@contacto.com</td>
+              <td>Pastel de vainilla con adornos de globo</td>
+              
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Alberto Miguel Juarez</td>
+              <td>4896231875</td>
+              <td>norther@contacto.com</td>
+              <td>Pastel de chocolate con adorno de minion</td>
+              
+            </tr>
+          </table>
+    </nav>
+    
+  
+
+    </section>
+
+   
+</body>
+<footer>
+    <p>Direcciómn: Mariano Jimenez #21 Col. Linares, San Luis Potosí</p>
+    
+    <p>Tel: 4875213985</p>
+   
+    <P>Horario de atención: Contamos con atención las 24 horas del día, de lunes a sábado.</P>
+</footer>
+</html>
